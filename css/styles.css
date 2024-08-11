@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins";
+}
+
+body {
+   
+    margin: auto;
+    background-color: palegoldenrod;
+}
+
+img {
+    width: 100%;
+    border-radius: 3px;
+}
+
+.photo-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+}
+
+.photos {
+    text-align: center;
+    padding: 10px ;
+    /* border: 4px solid red; */ 
+    /* extra design above */
+}
+
+.content, h1 ,h5 {
+    text-align: center;  
+}
+
+h1, h5 {
+    margin: 20px 0;
+}
+
+h1 {
+    padding-top: 20px;
+}
+
+
+@media screen and (max-width:900px) {
+.photo-container {
+    grid-template-columns:  repeat(2 ,1fr);
+    margin: 0 auto;
+
+}}
+
+@media screen and (max-width:700px) {
+.photo-container {
+    grid-template-columns: 1fr;
+    width: 400px;
+    margin: 0 auto;
+
+}}
